@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<main>
+    <title>All about cats....</title>
+    <h1>Cats</h1>
+    <h2>CatPhotoApp</h2>
+
+    <p>Click here to view more <a href ="#">cat photos</a>.</p>
+    <img src = "catpic.jpg" alt = "A staring cute cat">
+    <p>Things cats love: </p>
+
+    <div>
+    <ul>
+        <li>scratching</li>
+        <li>meowing</li>
+        <li>comfort</li>
+    </ul>
+    <p>Things cats hate: </p>
+    <ol>
+        <li>Flea treatment</li>
+        <li>bathing</li>
+        <li>discomfort</li>
+    </ol>
+    </div>
+
+    <!--form takes the info inputted by the 
+    user and stores it in the link provided-->
+    <form action = "/submit-cat-photo">
+        <input type ="text" placeholder ="cat photo url" required>
+        <button type ="submit" >submit</button><!--Creates the submit button-->
+
+    </form>
+    <!--These are radio inputs-->
+    <label for="indoor">
+        <input id= "indoor" type = "radio" name = "Indoor-Outdoor" > Indoor
+     </label>
+
+     <label>
+         <input id = "outdoor" type = "radio" name = "Indoor-Outdoor">Outdoor
+         <br><br>
+         
+     </label>
+     <!--These are checkbox inputs. Each checkbox is supposed to be nested in a label tag-->
+
+     <label for ="mean">
+         <input id="mean" type="checkbox" name="personality" checked> Mean
+     </label>
+     <label for ="noisy">
+         <input id="noisy" type="checkbox" name="personality">Noisy 
+     </label>
+
+</main>
+</html>
